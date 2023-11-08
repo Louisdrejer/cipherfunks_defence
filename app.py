@@ -145,7 +145,7 @@ def register():
         c.execute(pass_statement)
         if(len(c.fetchall())>0):
             errored = True
-            passworderror = "That password is already in use by someone else!"
+            passworderror = "Password must contain one capital letter, one number, one lower case letter and between 8-15 characters in total"
 
         c.execute(user_statement)
         if(len(c.fetchall())>0):

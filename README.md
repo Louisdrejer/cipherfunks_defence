@@ -12,8 +12,8 @@ if you can find all the injection points. I can promise you that you are able to
 ### Installation
 You will need python 3 and flask. To install do: 
 ```sh 
-$ scp -r MySecretNotes stud@studXX.itu.dk:~
-$ ssh studXX.itu.dk -l stud
+$ scp -r MySecretNotes stud@stud107.itu.dk:~
+$ ssh stud107.itu.dk -l stud
 $ sudo apt-get install python3-flask 
 $ cd MySecretNotes
 $ python3 app.py 
