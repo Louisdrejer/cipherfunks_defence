@@ -108,7 +108,7 @@
                             request.form.username }}" required>
                             <br>
                            <input type="password" placeholder="Password" name="password" value="{{
-                            request.form.password }}" required minlength="8" maxlength="15" pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,15}$/">
+                            request.form.password }}" required minlength="8" maxlength="15" pattern="(^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\d).*$.)">
                             {% if passworderror %}
                           <p class="p-large"><strong>Error:</strong> {{ passworderror }}
                         {% endif %}
